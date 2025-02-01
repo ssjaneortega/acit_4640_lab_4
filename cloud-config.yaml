@@ -1,0 +1,13 @@
+#cloud-config
+users:
+  - name: web
+    primary_group: web
+    groups: wheel
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - AAAAC3NzaC1lZDI1NTE5AAAAIOMlMGmLI8ZX0sgO0XdX2zCnTelhPnpHeADjVSe7O7O
+
+packages:
+   - nginx
+   - nmap
