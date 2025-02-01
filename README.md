@@ -23,10 +23,10 @@ EC2 settings should be configured using the previously defined AMI variable, alo
   ssh-keygen -t ed25519 -f ~/.ssh/<key-name> -C "<commnet-to-identify-key>"
 
 # Commands used to initialize, fmt, plan... configuration.
-  -terraform init to initialize the directory
-  -terraform plan
-  -terraform validate to make sure main.tf is correct syntax wise
-  -terraform apply to run main.tf to create our instance
+  terraform init to initialize the directory
+  terraform plan
+  terraform validate to make sure main.tf is correct syntax wise
+  terraform apply to run main.tf to create our instance
 
       
 
