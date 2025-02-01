@@ -19,14 +19,14 @@ The security group (aws_security_group) should link VPC by using aws_vpc.web.id 
 
 EC2 settings should be configured using the previously defined AMI variable, along with the instance type, subnet ID, and security group. The public key is referenced in the .yaml file rather than being directly specified in the EC2 block.
 
-# Command used to create a new SSH key pair.
+## Command used to create a new SSH key pair.
   ssh-keygen -t ed25519 -f ~/.ssh/<key-name> -C "<commnet-to-identify-key>"
 
-# Commands used to initialize, fmt, plan... configuration.
-  terraform init to initialize the directory
-  terraform plan
-  terraform validate to make sure main.tf is correct syntax wise
-  terraform apply to run main.tf to create our instance
+## Commands used to initialize, fmt, plan... configuration.
+- `terraform init` to initialize the directory
+- `terraform plan`
+- `terraform validate` to make sure main.tf is correct syntax wise
+- `terraform apply` to run main.tf to create our instance
 
       
 
